@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results ignored="0" total="2" passed="1" failed="1" skipped="0">
+  <reporter-output>
+  </reporter-output>
+  <suite started-at="2025-08-23T03:42:00Z" name="Suite" finished-at="2025-08-23T03:43:07Z" duration-ms="67714">
+    <groups>
+      <group name="Regression">
+        <method signature="DashboardPageTest.CheckMyActionsPanel(java.util.Map)[pri:0, instance:TestClasses.DashboardPageTest@1199fe66]" name="CheckMyActionsPanel" class="TestClasses.DashboardPageTest"/>
+        <method signature="DashboardPageTest.panelCheck()[pri:0, instance:TestClasses.DashboardPageTest@1199fe66]" name="panelCheck" class="TestClasses.DashboardPageTest"/>
+        <method signature="LoginPageTest.testLoginPage(java.util.Map)[pri:0, instance:TestClasses.LoginPageTest@3ed242a4]" name="testLoginPage" class="TestClasses.LoginPageTest"/>
+      </group> <!-- Regression -->
+    </groups>
+    <test started-at="2025-08-23T03:42:00Z" name="Test" finished-at="2025-08-23T03:43:07Z" duration-ms="67714">
+      <class name="TestClasses.DashboardPageTest">
+        <test-method is-config="true" signature="InitilaizeDriver()[pri:0, instance:TestClasses.DashboardPageTest@1199fe66]" started-at="2025-08-23T03:42:36Z" name="InitilaizeDriver" finished-at="2025-08-23T03:43:02Z" duration-ms="25724" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- InitilaizeDriver -->
+        <test-method signature="panelCheck()[pri:0, instance:TestClasses.DashboardPageTest@1199fe66]" started-at="2025-08-23T03:43:02Z" name="panelCheck" description="To verify All the panesl Should be visible on Dashbaord Page" finished-at="2025-08-23T03:43:07Z" duration-ms="4777" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- panelCheck -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:TestClasses.DashboardPageTest@1199fe66]" started-at="2025-08-23T03:43:07Z" name="tearDown" finished-at="2025-08-23T03:43:07Z" duration-ms="878" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- TestClasses.DashboardPageTest -->
+      <class name="TestClasses.LoginPageTest">
+        <test-method is-config="true" signature="InitilaizeDriver()[pri:0, instance:TestClasses.LoginPageTest@3ed242a4]" started-at="2025-08-23T03:42:02Z" name="InitilaizeDriver" finished-at="2025-08-23T03:42:31Z" duration-ms="29591" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- InitilaizeDriver -->
+        <test-method signature="testLoginPage(java.util.Map)[pri:0, instance:TestClasses.LoginPageTest@3ed242a4]" started-at="2025-08-23T03:42:31Z" name="testLoginPage" data-provider="getData" finished-at="2025-08-23T03:42:34Z" duration-ms="2591" status="FAIL">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[{UserName=Admin user, Execute=Yes, Test Name=testLoginPage, Country=, Job Title=, EmployeeName=}]]>
+              </value>
+            </param>
+          </params>
+          <exception class="java.lang.AssertionError">
+            <message>
+              <![CDATA[User is not matched expected [Admin user] but found [manda user]]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.AssertionError: User is not matched expected [Admin user] but found [manda user]
+at org.testng.Assert.fail(Assert.java:96)
+at org.testng.Assert.failNotEquals(Assert.java:776)
+at org.testng.Assert.assertEqualsImpl(Assert.java:137)
+at org.testng.Assert.assertEquals(Assert.java:118)
+at org.testng.Assert.assertEquals(Assert.java:453)
+at TestClasses.LoginPageTest.testLoginPage(LoginPageTest.java:19)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)
+at org.testng.internal.Invoker.invokeMethod(Invoker.java:583)
+at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:719)
+at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:989)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
+at org.testng.TestRunner.privateRun(TestRunner.java:648)
+at org.testng.TestRunner.run(TestRunner.java:505)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:455)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:450)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:415)
+at org.testng.SuiteRunner.run(SuiteRunner.java:364)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:84)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1208)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1137)
+at org.testng.TestNG.runSuites(TestNG.java:1049)
+at org.testng.TestNG.run(TestNG.java:1017)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.AssertionError -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testLoginPage -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:TestClasses.LoginPageTest@3ed242a4]" started-at="2025-08-23T03:42:35Z" name="tearDown" finished-at="2025-08-23T03:42:36Z" duration-ms="1081" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- TestClasses.LoginPageTest -->
+    </test> <!-- Test -->
+  </suite> <!-- Suite -->
+</testng-results>
